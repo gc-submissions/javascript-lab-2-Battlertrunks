@@ -41,3 +41,51 @@ function fight(player1, player2, player1Health, player2Health) {
     }
   }
 }
+
+const printSqaure = (width) => {
+  let log = "";
+  for (let i = 0; i < width; i++) {
+    log += "#";
+  }
+  return log;
+};
+
+console.log(printSqaure(6));
+
+const printTriangle = (width) => {
+  let log = "";
+  for (let i = 0; i < width; i++) {
+    log += "#".repeat(i + 1);
+    log += "\n";
+  }
+  return log;
+};
+
+console.log(printTriangle(5));
+
+const getGrade = (grade) =>
+  grade >= 90
+    ? "A"
+    : grade >= 80
+    ? "B"
+    : grade >= 70
+    ? "C"
+    : grade >= 60
+    ? "D"
+    : "F";
+
+console.log(getGrade(94));
+
+const prioritize = (urgent, important) =>
+  urgent && important
+    ? 1
+    : !urgent && important
+    ? 2
+    : urgent && !important
+    ? 3
+    : 4;
+
+const urgentBool = false;
+const importantBool = false;
+
+console.log(prioritize(urgentBool, importantBool));
