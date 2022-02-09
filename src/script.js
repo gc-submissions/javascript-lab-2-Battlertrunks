@@ -6,7 +6,6 @@ const randomDamage = () => Math.floor(Math.random() * 10 + 1);
 
 const chooseOption = (opt1, opt2) => {
   const randNum = Math.floor(Math.random() * 2);
-  console.log(randNum);
   return randNum === 0 ? opt1 : opt2;
 };
 
